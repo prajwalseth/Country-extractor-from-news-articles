@@ -1,1 +1,1 @@
-# Koc-week1
+# Koç summer research program code
