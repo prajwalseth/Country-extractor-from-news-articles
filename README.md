@@ -1,3 +1,5 @@
+## Country extractor from News Articles
+
 This module relies on the [flashgeotext](https://flashgeotext.iwpnd.pw/) library and the [Stanford Named Entity Recognizer (NER)](https://nlp.stanford.edu/software/CRF-NER.shtml) to return the [2-letter country code](https://www.iban.com/country-codes) of the country that the news article (written in English) is talking about. It also gives a list of all countries, cities, states, and nationalities found in the article.
 
 My approach has several advantages over the vanilla flashgeotext library. These are:
