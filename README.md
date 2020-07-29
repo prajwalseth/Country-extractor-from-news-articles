@@ -1,6 +1,6 @@
 ## Country extractor from News Articles
 
-This module relies on the [flashgeotext](https://flashgeotext.iwpnd.pw/) library and the [Stanford Named Entity Recognizer (NER)](https://nlp.stanford.edu/software/CRF-NER.shtml) to predict the [2-letter country code](https://www.iban.com/country-codes) of an English news article. It also gives a list of all countries, cities, states, and nationalities found in that article.
+This module relies on the [flashgeotext](https://flashgeotext.iwpnd.pw/) library and the [Stanford Named Entity Recognizer (NER)](https://nlp.stanford.edu/software/CRF-NER.shtml) to predict the [2-letter country code](https://www.iban.com/country-codes) from the text of an English news article. It also gives a list of all countries, cities, states, and nationalities found in that article.
 
 The country extractor library has several advantages over other libraries that do the same task, such as flashgeotext and spaCy. These are:
 1. Adding [plural versions](https://en.wikipedia.org/wiki/List_of_adjectival_and_demonymic_forms_for_countries_and_nations) of every country (for example 'Chinese', 'American', 'Indian', etc). This feature is not present in either flashgeotext or spaCy, and leads to many country mentions being ignored.
