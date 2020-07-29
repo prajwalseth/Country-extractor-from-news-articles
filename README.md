@@ -12,4 +12,4 @@ The country extractor library has several advantages over other libraries that d
 7. Writing functions to easily add new cities that are not present in the demo data of flashgeotext, as well as adding the ability to remove words that should be ignored.
 8. Using Stanford's NER to remove the reporter's name from the article text. This creates a problem when the reporter's name includes words that are counted as a city. For example, 'Troy Greenwood' would be called a city due to 'Troy'. Approximately 500 such names have been added to the list of words that should be ignored while making predictions.
 9. Adding 32 countries (along with their capitals) that were not being predicted at all in the vanilla version of flashgeotext.
-10. Adding 'UN' and 'EU' as part of the output, so as to include those articles that are from the United Nations and the European Union.
+10. Adding 'UN' and 'EU' as part of the output, so as to include those articles that are from the United Nations or the European Union.
