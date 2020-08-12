@@ -14,11 +14,11 @@ The country extractor program has several advantages over other libraries that d
 9. Adding 32 countries (along with their capitals) that were not being predicted at all in the vanilla version of flashgeotext.
 10. Adding 'UN' and 'EU' as part of the output, so as to include those articles that are from the United Nations or the European Union.
 
-### How to use:
-1. Clone the master branch of this repository and open the 'country extractor.ipynb' file.
-2. Create an excel file with a 'text' column and place the text of the news articles in it. Point df_full to this file.
-3. Scroll to the end where it says 'df.to_excel' and specify where you want the output to be saved to (it will be exported as an excel file).
-4. If you do not want to manually add/modify the list of cities that are detected by the program, you can run all the cells
+### How to use this program:
+1. Clone the master branch of this repository and open the 'country extractor.ipynb' file in Jupyter Notebooks.
+2. Create an excel file with a 'text' column and place the text of the news articles in it. Save this file and point df_full to this file (in the 5th block of the iPython notebook).
+3. Scroll to the end of the notebook where it says 'df.to_excel' and specify where you want the output to be saved. It will be exported to an excel file by default, but this can be changed to .csv or any other format based on the user's preference.
+4. If you do not want to manually add/modify the list of cities that are detected by the program you can run all the cells and find your output in the place you had set earlier, once the program finishes running.
 
 ### How to add or modify a country or city:
 1. Scroll to the section where addCity1 is being called.
@@ -27,7 +27,7 @@ addCity1(['nameOfCity1', 'nameOfCity2'],'XYabcd',special=0) where XY is the 2 le
 3. Scroll to the section where addCity2 is being called and add addCity2(['nameOfCity1', 'nameOfCity2'],'XYabcd'). The special=0 or 1 parameter need not be passed here.
 Note: The characters after the 2 letter country code are ignored while calculating the final count of countries mentioned in the news article, so 'IN25' and 'IN27' would both result in 'IN' being added to the final list of countries mentioned. I would recommend starting 'abcd' from 30 onwards, for example using 'IN30', 'IN31', 'US31', 'CN31', since most of the values below 20 have been used by me.
 
-### How to add or modify words to be ignored in the flashgeotext output:
+### How to add or modify words to be ignored by flashgeotext:
 1. Scroll to the 'delete_these_words' array and add the word you wish to ignore to it. It will then not be classified as a city when the program is re-run.
 
 
