@@ -18,7 +18,7 @@ The country extractor program has several advantages over other libraries that d
 1. Clone the master branch of this repository and open the 'country extractor.ipynb' file in Jupyter Notebooks.
 2. Create an excel file with a 'text' column and place the text of the news articles in it. Save this file and point df_full to this file (in the 5th block of the iPython notebook).
 3. Scroll to the end of the notebook where it says 'df.to_excel' and specify where you want the output to be saved. It will be exported to an excel file by default, but this can be changed to .csv or any other format based on the user's preference.
-4. If you do not want to manually add/modify the list of cities that are detected by the program you can run all the cells and find your output in the place you had set earlier, once the program finishes running.
+4. If you do not want to manually add/modify the list of cities that are detected by the program, you can run all the cells and find your output in the place you had set earlier (once the program finishes running).
 
 ### How to add or modify a country or city:
 Open 'country extractor.ipynb' and do the following:
