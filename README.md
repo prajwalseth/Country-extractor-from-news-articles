@@ -24,7 +24,7 @@ The country extractor program has several advantages over other libraries that d
 1. Scroll to the section where addCity1 is being called.
 2. Add the city with the following code:
 addCity1(['nameOfCity1', 'nameOfCity2'], 'XYabcd', special=0) where XY is the 2 letter country code of the city, and abcd is any alphanumeric string that can be used to separate that entry from other cities that have already been added. 
-If the city or country being added is a special name, for example an abbreviation (like 'U.K.') or a government body's name (like 'Fed'), pass special=1 to addCity1 so that the createUpperAndLowerCase() function is not called on those names. This will prevent lowercase versions of the city from being recognised in the text. For example, if you added 'Obama' to Japan then 'obama' would be recognised if special=0 was passed, but would not be recognised if special=1 was passed.
+If the city or country being added is a special name, for example an abbreviation (like 'U.K.') or a government body's name (like 'Fed'), pass special=1 to addCity1 so that the createUpperAndLowerCase() function is not called on those names. This will prevent lowercase versions of the city from being recognised in the text. For example, if you added 'Obama' to US then 'obama' would be recognised if special=0 was passed, but would not be recognised if special=1 was passed.
 3. Scroll to the section where addCity2 is being called and add addCity2(['nameOfCity1', 'nameOfCity2'], 'XYabcd'). The special=0 or 1 parameter does not need to be passed here.
 Note: The characters after the 2 letter country code are ignored while calculating the final count of countries mentioned in the news article, so 'IN25' and 'IN27' would both result in 'IN' being added to the final list of countries mentioned. I would recommend starting 'abcd' from 30 onwards, for example using 'IN30', 'IN31', 'US31', 'CN31', since most of the values below 20 have been used by me.
 
@@ -32,7 +32,7 @@ Note: The characters after the 2 letter country code are ignored while calculati
 1. Scroll to the 'delete_these_words' array and add the word you wish to ignore to it. It will then not be classified as a city when the program is re-run.
 
 
-### Versions of dependencies as of August 12, 2020
+### Versions of dependent libraries as of August 12, 2020
 1. geotext: v 0.4.0
 2. flashgeotext: v 0.2.0
 3. Stanford NER (not required to run 'country extractor.ipynb'): v 4.0.0
