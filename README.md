@@ -44,6 +44,10 @@ Open 'country extractor.ipynb' and do the following:
 | >=1     | 199       | 99.5%      |
 | >=2     | 184       | 92%      |
 
+### Comparison with [spaCy's Part-of-Speech tagging](https://spacy.io/usage/linguistic-features)
+![Image of spaCy and country extractor](https://github.com/prajwalseth/Country-extractor-from-news-articles/blob/master/country%20extractor%20vs%20spacy4-min.jpg?raw=true)
+
+
 ### Versions of dependent libraries as of August 12, 2020
 1. geotext: v 0.4.0
 2. flashgeotext: v 0.2.0
