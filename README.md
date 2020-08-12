@@ -33,6 +33,13 @@ Note: The characters after the 2 letter country code are ignored while calculati
 ### How to add or modify words to be ignored by flashgeotext:
 1. Scroll to the 'delete_these_words' list and add the word you wish to ignore to it. It will then not be classified as a city when the program is re-run.
 
+### Comparison with locations from [GeoWebNews](https://github.com/milangritta/Pragmatic-Guide-to-Geoparsing-Evaluation/tree/master/data/GWN.xml)
+
+| Number of common locations | Count | Percentage |
+| :---         |     :---:      |          ---: |
+| 0   | 1     | 0.5%    |
+| >=1     | 199       | 99.5%      |
+| >=2     | 184       | 92%      |
 
 ### Versions of dependent libraries as of August 12, 2020
 1. geotext: v 0.4.0
