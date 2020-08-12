@@ -21,6 +21,7 @@ The country extractor program has several advantages over other libraries that d
 4. If you do not want to manually add/modify the list of cities that are detected by the program you can run all the cells and find your output in the place you had set earlier, once the program finishes running.
 
 ### How to add or modify a country or city:
+Open 'country extractor.ipynb' and do the following:
 1. Scroll to the section where addCity1 is being called.
 2. Add the city with the following code:
 addCity1(['nameOfCity1', 'nameOfCity2'], 'XYabcd', special=0) where XY is the 2 letter country code of the city, and abcd is any alphanumeric string that can be used to separate that entry from other cities that have already been added. 
@@ -32,6 +33,7 @@ If the city or country being added is a special name, for example an abbreviatio
 Note: The characters after the 2 letter country code are ignored while calculating the final count of countries mentioned in the news article, so 'IN25' and 'IN27' would both result in 'IN' being added to the final list of countries mentioned. I would recommend starting 'abcd' from 30 onwards, for example using 'IN30', 'IN31', 'US31', 'CN31', since most of the values below 20 have been used by me.
 
 ### How to add or modify words to be ignored by flashgeotext:
+Open 'country extractor.ipynb' and do the following:
 1. Scroll to the 'delete_these_words' list and add the word you wish to ignore to it. It will then not be classified as a city when the program is re-run.
 
 ### Comparison with locations from [GeoWebNews](https://github.com/milangritta/Pragmatic-Guide-to-Geoparsing-Evaluation/tree/master/data/GWN.xml)
