@@ -28,6 +28,7 @@ addCity1(['nameOfCity1', 'nameOfCity2'], 'XYabcd', special=0) where XY is the 2 
 If the city or country being added is a special name, for example an abbreviation (like 'U.K.') or a government body's name (like 'Fed'), pass special=1 to addCity1 so that the createUpperAndLowerCase() function is not called on those names. This will prevent lowercase versions of the city from being recognised in the text. For example, if you added 'Obama' to US then 'obama' would be recognised if special=0 was passed, but would not be recognised if special=1 was passed.
 
 3. Scroll to the section where addCity2 is being called and add addCity2(['nameOfCity1', 'nameOfCity2'], 'XYabcd'). The special=0 or 1 parameter does not need to be passed here.
+
 Note: The characters after the 2 letter country code are ignored while calculating the final count of countries mentioned in the news article, so 'IN25' and 'IN27' would both result in 'IN' being added to the final list of countries mentioned. I would recommend starting 'abcd' from 30 onwards, for example using 'IN30', 'IN31', 'US31', 'CN31', since most of the values below 20 have been used by me.
 
 ### How to add or modify words to be ignored by flashgeotext:
